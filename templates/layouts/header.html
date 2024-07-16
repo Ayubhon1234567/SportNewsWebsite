@@ -1,0 +1,58 @@
+{% load static %}
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="index-2.html" class="custom-logo-link"><img src="{% static 'images/soccer/logo.png' %}" alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                    <li class="active">
+                        <a href="{%url 'pages:index'%}"><span>Home</span></a>
+                    </li>
+                    <li>
+                        <a href="{%url 'pages:matches'%}"><span>Matches</span></a>
+                    </li>
+                    <li>
+                        <a href="{%url 'pages:staff'%}"><span>Team</span></a>
+                    </li>
+                    <li><a href="{%url 'pages:news'%}"><span>News</span></a></li>
+                    <li><a href="{%url 'pages:store'%}"><span>Store</span></a></li>
+                    <li><a href="{%url 'pages:contacts'%}"><span>Contact</span></a></li>
+                    <li class="cart full">
+                        <div class="cart-drop">
+                            <table class="ct">
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="{% static 'images/common/cart-product.jpg' %}" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="{% static 'images/common/cart-product.jpg' %}" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="wrap">
+                                <div class="total-text">Subtotal: </div>
+                                <div class="total-digit">£ 120</div>
+                            </div>
+                            <div class="wrap btn-wrap">
+                                <a href="cart.html" class="btn view">View cart</a>
+                                <a href="checkout.html" class="btn check">checkout cart</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

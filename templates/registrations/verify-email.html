@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{%url 'users:verify-email'%]" method="post">
+    {%csrf_token%}
+    <label for="code">
+        <input id="code"name="code" type="text">
+    </label>
+    <button type="submit">Send Code</button>
+</form>
+
+</body>
+</html>
